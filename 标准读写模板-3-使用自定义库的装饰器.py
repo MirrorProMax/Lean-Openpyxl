@@ -3,8 +3,6 @@ from openpyxl.worksheet.worksheet import Worksheet
 from functools import wraps
 from SubFunc import SubFunc
 
-filePath = "测试文件.xlsx"
-
 
 @SubFunc.safeLoadWorkbook  # 装饰器函数
 def mainProcess(wb):
@@ -20,5 +18,6 @@ def mainProcess(wb):
     ws["A1"] = "测试"
 
 
+filePath = "测试文件.xlsx"
 # 调用主函数
 mainProcess(filePath)
