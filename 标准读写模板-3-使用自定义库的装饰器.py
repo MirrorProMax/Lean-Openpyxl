@@ -1,7 +1,7 @@
 from openpyxl import load_workbook
 from openpyxl.worksheet.worksheet import Worksheet
 from functools import wraps
-from SubFunc import SubFunc  # 假设SubFunc是一个模块，包含一些子函数
+from SubFunc import SubFunc
 
 filePath = "测试文件.xlsx"
 
